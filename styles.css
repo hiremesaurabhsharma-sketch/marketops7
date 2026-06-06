@@ -6,12 +6,12 @@
   --font-body: 'Inter', sans-serif;
 
   /* Harmonious Sleek Dark Tech Palette */
-  --bg-main: #0b0f19;
-  --bg-surface: rgba(255, 255, 255, 0.03);
-  --bg-card: rgba(20, 26, 42, 0.6);
-  --bg-glass: rgba(11, 15, 25, 0.7);
-  --border-light: rgba(255, 255, 255, 0.08);
-  --border-focus: rgba(3, 169, 224, 0.4);
+  --bg-main: #050810;
+  --bg-surface: rgba(0, 198, 255, 0.03);
+  --bg-card: rgba(12, 16, 28, 0.7);
+  --bg-glass: rgba(5, 8, 16, 0.8);
+  --border-light: rgba(0, 198, 255, 0.15);
+  --border-focus: rgba(0, 198, 255, 0.6);
 
   /* Curated HSL Color Tokens */
   --color-primary: #0C3BFB;       /* Deep electric blue */
@@ -107,7 +107,7 @@ button {
 .glass-panel:hover {
   border-color: var(--border-focus);
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 198, 255, 0.05);
+  box-shadow: 0 10px 40px rgba(0, 198, 255, 0.15), inset 0 0 15px rgba(0, 198, 255, 0.05);
 }
 
 /* Sticky Premium Header */
@@ -290,14 +290,15 @@ button {
 }
 
 .btn-primary {
-  background: var(--grad-cyan-blue);
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent-cyan) 100%);
   color: var(--color-text-white);
-  box-shadow: 0 4px 20px rgba(0, 114, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 198, 255, 0.4);
+  border: 1px solid rgba(0, 198, 255, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 25px rgba(0, 114, 255, 0.5);
+  box-shadow: 0 6px 30px rgba(0, 198, 255, 0.7);
 }
 
 .btn-secondary {
