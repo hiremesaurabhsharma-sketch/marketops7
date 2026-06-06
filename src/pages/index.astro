@@ -1,0 +1,1228 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="MarketOps | Performance Marketing & Digital Ads Agency">
+  <!-- HERO LANDING SECTION -->
+  <section class="hero-wrapper" style="position: relative; overflow: hidden; background: #050810;">
+    <canvas id="homeCanvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; opacity: 0.8;"></canvas>
+    <div class="hero-overlay" style="background: linear-gradient(180deg, rgba(5, 8, 16, 0.4) 0%, var(--bg-main) 100%); z-index: 1;"></div>
+    <div class="container" style="position: relative; z-index: 2; text-align: center;">
+      <div class="reveal-on-scroll">
+        <h1 class="gradient-text" style="font-size: clamp(2.2rem, 6vw, 4.8rem); max-width: 900px; margin: 0 auto 1.5rem; text-transform: capitalize;">
+          Built for the brands<br>that <span class="gradient-text-alt" style="font-weight: 800;">don’t settle</span>
+        </h1>
+        <p style="font-size: clamp(1rem, 2.5vw, 1.25rem); color: var(--color-text-muted); max-width: 600px; margin: 0 auto 2.5rem;">
+          Trusted by brands that demand control, consistency, compliance, and explosive performance
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="#calendly" class="btn btn-primary">Talk to Our Team</a>
+          <a href="#video-showcase" class="btn btn-secondary">See How We Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWREEL MOUNT SECTION -->
+  <section id="video-showcase" class="section-padding" style="background: #0d121f;">
+    <div class="container">
+      <div class="reveal-on-scroll" style="text-align: center; margin-bottom: 3.5rem;">
+        <h2 style="font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 1rem;">Showcasing Growth Operations</h2>
+        <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">Watch how we construct and scale data-driven growth pipelines.</p>
+      </div>
+      
+      <div class="video-section-wrapper reveal-on-scroll">
+        <video src="/assets/home/home.webm" autoplay loop muted playsinline></video>
+        <button class="mute-btn-overlay">🔇 Muted</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- AD SPENDS LOGO SCROLLER -->
+  <section class="section-padding" style="background: var(--bg-main); overflow: hidden;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center;">
+        <div class="reveal-on-scroll">
+          <div class="badge-lead">MarketOps Spent</div>
+          <h3 class="gradient-text" style="font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.2rem;">
+            $<span class="counter-number" data-target="100351886" data-format="true">0</span>+
+          </h3>
+          <p style="color: var(--color-text-muted); font-size: 1.1rem; font-weight: 500;">
+            Just a normal month of paid advertising spends managed by MarketOps growth partners.
+          </p>
+        </div>
+        
+        <div class="marquee-container reveal-on-scroll">
+          <div class="marquee-content">
+            <div class="marquee-card"><img src="/assets/spends/bhs.png" alt="BHS spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/cured.png" alt="Cured spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/ES.png" alt="ES spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/ghar.png" alt="Ghar spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/histrips.png" alt="Histrips spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/HOA.png" alt="HOA spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/natures-sunrise.png" alt="Natures Sunrise spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/obsessive.png" alt="Obsessive spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/old-money.png" alt="Old Money spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/sana.png" alt="Sana spend partner"></div>
+            <!-- Duplicated for infinite scroll -->
+            <div class="marquee-card"><img src="/assets/spends/bhs.png" alt="BHS spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/cured.png" alt="Cured spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/ES.png" alt="ES spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/ghar.png" alt="Ghar spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/histrips.png" alt="Histrips spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/HOA.png" alt="HOA spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/natures-sunrise.png" alt="Natures Sunrise spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/obsessive.png" alt="Obsessive spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/old-money.png" alt="Old Money spend partner"></div>
+            <div class="marquee-card"><img src="/assets/spends/sana.png" alt="Sana spend partner"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GROWTH PARTNERS LOGO MARQUEE -->
+  <section class="section-padding" style="background: #0a0d16; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); overflow: hidden;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center;">
+        <div class="reveal-on-scroll">
+          <div class="badge-lead">Global Channels</div>
+          <h3 class="gradient-text" style="font-size: 2rem; margin-bottom: 0.5rem; font-weight: 700;">Growth Partners</h3>
+          <p style="color: var(--color-text-muted); font-size: 1rem;">Backed and supported by the channels that shape the advertising industry.</p>
+        </div>
+        
+        <div class="marquee-container reveal-on-scroll">
+          <div class="marquee-content">
+            <div class="marquee-card"><img src="/assets/logos/skala-media.png" alt="Skala Media logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/suits-finnance.png" alt="Suits Finance logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/whop.png" alt="Whop logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/ooptics.png" alt="Ooptics logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/incogniton.png" alt="Incogniton logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/tiktok.png" alt="TikTok logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/google.png" alt="Google partner logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/growthmodo.png" alt="Growthmodo logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/meta.png" alt="Meta partner logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/slash.png" alt="Slash logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/ecover-solutions.png" alt="eCover Solutions logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/swaped.png" alt="Swapd logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/snapchat-v1.png" alt="Snapchat logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/nexcale.png" alt="Nexcale logo"></div>
+            <!-- Duplicated for infinite scroll -->
+            <div class="marquee-card"><img src="/assets/logos/skala-media.png" alt="Skala Media logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/suits-finnance.png" alt="Suits Finance logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/whop.png" alt="Whop logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/ooptics.png" alt="Ooptics logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/incogniton.png" alt="Incogniton logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/tiktok.png" alt="TikTok logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/google.png" alt="Google partner logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/growthmodo.png" alt="Growthmodo logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/meta.png" alt="Meta partner logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/slash.png" alt="Slash logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/ecover-solutions.png" alt="eCover Solutions logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/swaped.png" alt="Swapd logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/snapchat-v1.png" alt="Snapchat logo"></div>
+            <div class="marquee-card"><img src="/assets/logos/nexcale.png" alt="Nexcale logo"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6-SERVICE BENTO GRID SHOWCASE -->
+  <section class="section-padding" style="background: var(--bg-main); position: relative;">
+    <div style="position: absolute; top: 10%; left: 5%; width: 300px; height: 300px; background: rgba(0, 198, 255, 0.05); filter: blur(80px); border-radius: 50%; pointer-events: none;"></div>
+    <div style="position: absolute; bottom: 10%; right: 5%; width: 300px; height: 300px; background: rgba(12, 59, 251, 0.05); filter: blur(80px); border-radius: 50%; pointer-events: none;"></div>
+
+    <div class="container">
+      <div class="reveal-on-scroll" style="text-align: center; margin-bottom: 5rem;">
+        <div class="badge-lead">Core Capabilities</div>
+        <h2 style="font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1.5rem;">
+          From Concept to <span class="gradient-text">Market Leadership</span>
+        </h2>
+        <p style="color: var(--color-text-muted); max-width: 650px; margin: 0 auto;">
+          We help turn your ideas into successful brands with smart marketing, strong digital presence, and customer-focused strategies. From building awareness to growing sales, our goal is to help your business stand out, connect with people, and grow with confidence in a competitive market.
+        </p>
+      </div>
+
+      <!-- CREATIVE FLOATING TIMELINE JOURNEY -->
+      <div style="position: relative; max-width: 850px; margin: 0 auto; padding: 2rem 0 2rem 1.5rem;">
+        <!-- Glowing Vertical Connecting Line -->
+        <div style="position: absolute; left: 1.5rem; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, transparent, rgba(0,198,255,0.5) 15%, rgba(255,63,108,0.5) 85%, transparent); z-index: 0;"></div>
+
+        <!-- Step 1 -->
+        <div class="reveal-on-scroll" style="position: relative; padding-left: 4rem; margin-bottom: 5rem;">
+          <!-- Node -->
+          <div style="position: absolute; left: -23px; top: 0; width: 50px; height: 50px; background: var(--bg-main); border: 2px solid #00c6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #00c6ff; box-shadow: 0 0 25px rgba(0,198,255,0.4); z-index: 2;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </div>
+          <!-- Abstract Glow -->
+          <div style="position: absolute; top: -30px; left: 50px; width: 150px; height: 150px; background: rgba(0, 198, 255, 0.08); filter: blur(40px); border-radius: 50%; pointer-events: none;"></div>
+          <!-- Content -->
+          <div style="position: relative; z-index: 1;">
+            <div style="font-size: 0.85rem; font-weight: 800; letter-spacing: 3px; color: #00c6ff; margin-bottom: 0.5rem;">PHASE 01</div>
+            <h3 style="font-size: clamp(1.8rem, 4vw, 2.4rem); color: #fff; margin-bottom: 1rem; font-family: var(--font-heading); line-height: 1.2;">Market Research &amp; Analysis</h3>
+            <p style="color: var(--color-text-muted); font-size: 1.15rem; line-height: 1.7; max-width: 650px;">
+              Understanding your audience, analyzing competitors, and discovering the absolute best opportunities for your brand to dominate the market with data-backed decisions.
+            </p>
+            <div style="position: relative; z-index: 1; margin-top: 1.5rem; max-width: 650px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); aspect-ratio: 16/7; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+              <img src="/assets/images/real_research.png" alt="Market Research Team" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="reveal-on-scroll" style="position: relative; padding-left: 4rem; margin-bottom: 5rem;">
+          <!-- Node -->
+          <div style="position: absolute; left: -23px; top: 0; width: 50px; height: 50px; background: var(--bg-main); border: 2px solid #ff9900; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ff9900; box-shadow: 0 0 25px rgba(255,153,0,0.4); z-index: 2;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+          </div>
+          <!-- Abstract Glow -->
+          <div style="position: absolute; top: -30px; left: 50px; width: 150px; height: 150px; background: rgba(255, 153, 0, 0.08); filter: blur(40px); border-radius: 50%; pointer-events: none;"></div>
+          <!-- Content -->
+          <div style="position: relative; z-index: 1;">
+            <div style="font-size: 0.85rem; font-weight: 800; letter-spacing: 3px; color: #ff9900; margin-bottom: 0.5rem;">PHASE 02</div>
+            <h3 style="font-size: clamp(1.8rem, 4vw, 2.4rem); color: #fff; margin-bottom: 1rem; font-family: var(--font-heading); line-height: 1.2;">Strong Digital Presence</h3>
+            <p style="color: var(--color-text-muted); font-size: 1.15rem; line-height: 1.7; max-width: 650px;">
+              Building modern, high-performing websites and optimizing your brand across all digital touchpoints to leave a lasting, premium impression.
+            </p>
+            <div style="position: relative; z-index: 1; margin-top: 1.5rem; max-width: 650px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); aspect-ratio: 16/7; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+              <img src="/assets/images/real_digital.png" alt="Digital Presence Laptop" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="reveal-on-scroll" style="position: relative; padding-left: 4rem; margin-bottom: 5rem;">
+          <!-- Node -->
+          <div style="position: absolute; left: -23px; top: 0; width: 50px; height: 50px; background: var(--bg-main); border: 2px solid #5a7cff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #5a7cff; box-shadow: 0 0 25px rgba(90,124,255,0.4); z-index: 2;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 3.82-13.1c1.37-1.74 3.79-1.92 5.09-.61 1.3 1.3 1.48 3.73-.26 5.1A22 22 0 0 1 12 15z"/><path d="m16 9-3-3"/></svg>
+          </div>
+          <!-- Abstract Glow -->
+          <div style="position: absolute; top: -30px; left: 50px; width: 150px; height: 150px; background: rgba(90, 124, 255, 0.08); filter: blur(40px); border-radius: 50%; pointer-events: none;"></div>
+          <!-- Content -->
+          <div style="position: relative; z-index: 1;">
+            <div style="font-size: 0.85rem; font-weight: 800; letter-spacing: 3px; color: #5a7cff; margin-bottom: 0.5rem;">PHASE 03</div>
+            <h3 style="font-size: clamp(1.8rem, 4vw, 2.4rem); color: #fff; margin-bottom: 1rem; font-family: var(--font-heading); line-height: 1.2;">Strategic Marketing</h3>
+            <p style="color: var(--color-text-muted); font-size: 1.15rem; line-height: 1.7; max-width: 650px;">
+              Running highly targeted and algorithmically optimized ad campaigns across Google, Meta, and others to maximize reach and predictably scale sales.
+            </p>
+            <div style="position: relative; z-index: 1; margin-top: 1.5rem; max-width: 650px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); aspect-ratio: 16/7; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+              <img src="/assets/images/real_marketing.png" alt="Strategic Marketing Ads" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="reveal-on-scroll" style="position: relative; padding-left: 4rem; margin-bottom: 5rem;">
+          <!-- Node -->
+          <div style="position: absolute; left: -23px; top: 0; width: 50px; height: 50px; background: var(--bg-main); border: 2px solid #00ffa3; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #00ffa3; box-shadow: 0 0 25px rgba(0,255,163,0.4); z-index: 2;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <!-- Abstract Glow -->
+          <div style="position: absolute; top: -30px; left: 50px; width: 150px; height: 150px; background: rgba(0, 255, 163, 0.08); filter: blur(40px); border-radius: 50%; pointer-events: none;"></div>
+          <!-- Content -->
+          <div style="position: relative; z-index: 1;">
+            <div style="font-size: 0.85rem; font-weight: 800; letter-spacing: 3px; color: #00ffa3; margin-bottom: 0.5rem;">PHASE 04</div>
+            <h3 style="font-size: clamp(1.8rem, 4vw, 2.4rem); color: #fff; margin-bottom: 1rem; font-family: var(--font-heading); line-height: 1.2;">Customer Insights</h3>
+            <p style="color: var(--color-text-muted); font-size: 1.15rem; line-height: 1.7; max-width: 650px;">
+              Gathering actionable, deep-level insights to refine your products, improve experiences, and build long-term, unshakeable brand loyalty.
+            </p>
+            <div style="position: relative; z-index: 1; margin-top: 1.5rem; max-width: 650px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); aspect-ratio: 16/7; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+              <img src="/assets/images/real_insights.png" alt="Customer Insights Data" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="reveal-on-scroll" style="position: relative; padding-left: 4rem;">
+          <!-- Node -->
+          <div style="position: absolute; left: -23px; top: 0; width: 50px; height: 50px; background: var(--bg-main); border: 2px solid #ff3f6c; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ff3f6c; box-shadow: 0 0 25px rgba(255,63,108,0.4); z-index: 2;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <!-- Abstract Glow -->
+          <div style="position: absolute; top: -30px; left: 50px; width: 150px; height: 150px; background: rgba(255, 63, 108, 0.08); filter: blur(40px); border-radius: 50%; pointer-events: none;"></div>
+          <!-- Content -->
+          <div style="position: relative; z-index: 1;">
+            <div style="font-size: 0.85rem; font-weight: 800; letter-spacing: 3px; color: #ff3f6c; margin-bottom: 0.5rem;">PHASE 05</div>
+            <h3 style="font-size: clamp(1.8rem, 4vw, 2.4rem); color: #fff; margin-bottom: 1rem; font-family: var(--font-heading); line-height: 1.2;">After-Sales Support</h3>
+            <p style="color: var(--color-text-muted); font-size: 1.15rem; line-height: 1.7; max-width: 650px;">
+              Providing dedicated, elite-tier support to your customers post-purchase, ensuring satisfaction, resolving issues rapidly, and encouraging strong repeat business.
+            </p>
+            <div style="position: relative; z-index: 1; margin-top: 1.5rem; max-width: 650px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); aspect-ratio: 16/7; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+              <img src="/assets/images/real_support.png" alt="After Sales Support" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTER METRICS SECTION -->
+  <section class="section-padding" style="background: #080c14; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+    <div class="container">
+      <div class="reveal-on-scroll" style="text-align: center; margin-bottom: 4rem;">
+        <h2 style="font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 1.5rem;">When Infrastructure & Creative Work Together</h2>
+        <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">
+          Real, verifiable data averages recorded across our portfolio partners in the last 12 months.
+        </p>
+      </div>
+      
+      <!-- CREATIVE FLOATING STATS LAYOUT (No Boxes) -->
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4rem; position: relative; padding: 4rem 0;">
+        
+        <!-- Center Abstract Tech Graphic -->
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; pointer-events: none; z-index: 0; opacity: 0.5;">
+          <div style="width: 300px; height: 300px; border-radius: 50%; border: 1px dashed rgba(0, 198, 255, 0.3); animation: spin 20s linear infinite; position: absolute;"></div>
+          <div style="width: 450px; height: 450px; border-radius: 50%; border: 1px dotted rgba(255, 255, 255, 0.1); animation: spin 30s linear infinite reverse; position: absolute;"></div>
+          <div style="width: 500px; height: 500px; background: radial-gradient(circle, rgba(0,198,255,0.05) 0%, transparent 60%); position: absolute; filter: blur(40px);"></div>
+        </div>
+
+        <!-- Stat 1 (Left Aligned Text, Right Border) -->
+        <div class="reveal-on-scroll" style="position: relative; z-index: 1; width: 40%; min-width: 300px; text-align: right; border-right: 3px solid rgba(0,198,255,0.5); padding-right: 2rem; transform: translateY(-30px);">
+          <div style="font-size: clamp(3rem, 5vw, 4.5rem); font-family: var(--font-heading); font-weight: 900; line-height: 1.1; margin-bottom: 0.5rem; color: #fff; text-shadow: 0 0 25px rgba(0,198,255,0.4);">
+            24/7 <br><span style="color: #00c6ff; font-size: 0.6em; text-transform: uppercase; letter-spacing: 2px;">Support</span>
+          </div>
+          <p style="color: var(--color-text-muted); font-size: 1.1rem; max-width: 320px; margin-left: auto; line-height: 1.6;">
+            Continuous ad activation and immediate account troubleshooting.
+          </p>
+        </div>
+
+        <!-- Stat 2 (Right Aligned Text, Left Border) -->
+        <div class="reveal-on-scroll" style="position: relative; z-index: 1; width: 40%; min-width: 300px; text-align: left; border-left: 3px solid rgba(255,153,0,0.5); padding-left: 2rem; transform: translateY(40px);">
+          <div style="font-size: clamp(3rem, 5vw, 4.5rem); font-family: var(--font-heading); font-weight: 900; line-height: 1.1; margin-bottom: 0.5rem; color: #fff; text-shadow: 0 0 25px rgba(255,153,0,0.4);">
+            37% <br><span style="color: #ff9900; font-size: 0.6em; text-transform: uppercase; letter-spacing: 2px;">Drop in CAC</span>
+          </div>
+          <p style="color: var(--color-text-muted); font-size: 1.1rem; max-width: 320px; line-height: 1.6;">
+            Massive average reduction in Customer Acquisition Cost (CAC) for our partners.
+          </p>
+        </div>
+
+        <!-- Stat 3 (Left Aligned Text, Right Border) -->
+        <div class="reveal-on-scroll" style="position: relative; z-index: 1; width: 40%; min-width: 300px; text-align: right; border-right: 3px solid rgba(0,255,163,0.5); padding-right: 2rem; transform: translateY(-20px);">
+          <div style="font-size: clamp(3rem, 5vw, 4.5rem); font-family: var(--font-heading); font-weight: 900; line-height: 1.1; margin-bottom: 0.5rem; color: #fff; text-shadow: 0 0 25px rgba(0,255,163,0.4);">
+            4.6s <br><span style="color: #00ffa3; font-size: 0.6em; text-transform: uppercase; letter-spacing: 2px;">Hook Ratio</span>
+          </div>
+          <p style="color: var(--color-text-muted); font-size: 1.1rem; max-width: 320px; margin-left: auto; line-height: 1.6;">
+            Average engagement hook ratio on our winning video creative angles.
+          </p>
+        </div>
+
+        <!-- Stat 4 (Right Aligned Text, Left Border) -->
+        <div class="reveal-on-scroll" style="position: relative; z-index: 1; width: 40%; min-width: 300px; text-align: left; border-left: 3px solid rgba(255,63,108,0.5); padding-left: 2rem; transform: translateY(30px);">
+          <div style="font-size: clamp(3rem, 5vw, 4.5rem); font-family: var(--font-heading); font-weight: 900; line-height: 1.1; margin-bottom: 0.5rem; color: #fff; text-shadow: 0 0 25px rgba(255,63,108,0.4);">
+            68% <br><span style="color: #ff3f6c; font-size: 0.6em; text-transform: uppercase; letter-spacing: 2px;">Recovered</span>
+          </div>
+          <p style="color: var(--color-text-muted); font-size: 1.1rem; max-width: 320px; line-height: 1.6;">
+            Abandoned carts automatically recovered using our dynamic retargeting flows.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PREMIUM CASE STUDIES SECTION -->
+  <section class="section-padding" style="background: #0a0d16; position: relative; overflow: hidden; border-top: 1px solid var(--border-light);">
+    <div class="container">
+      <div class="reveal-on-scroll" style="text-align: center; margin-bottom: 4rem;">
+        <div class="badge-lead">Case Studies</div>
+        <h2 style="font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 1rem;">Proven Results & Scaled Brands</h2>
+        <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">See how we engineer rapid growth and scale revenue for our enterprise partners.</p>
+      </div>
+
+      <div class="cs-grid">
+        <!-- Case Study 1 -->
+        <div class="cs-card reveal-on-scroll">
+          <div class="cs-bg" style="background-image: url('/assets/images/real_cs1.png');"></div>
+          <div class="cs-overlay"></div>
+          <div class="cs-content" style="position: relative; z-index: 2;">
+            <div class="cs-logo-wrapper">
+              <img src="/assets/spends/obsessive.png" alt="Obsessive" />
+            </div>
+            <span class="cs-tag">Apparel & Fashion</span>
+            <h3>Obsessive Scaled to 8-Figures</h3>
+            <div class="cs-metrics">
+              <div class="cs-metric">
+                <span class="cs-metric-val">4.5x</span>
+                <span class="cs-metric-label">ROAS Maintained</span>
+              </div>
+              <div class="cs-metric">
+                <span class="cs-metric-val">+210%</span>
+                <span class="cs-metric-label">Revenue Growth</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 2 -->
+        <div class="cs-card reveal-on-scroll" style="transition-delay: 0.1s;">
+          <div class="cs-bg" style="background-image: url('/assets/images/real_cs2.png');"></div>
+          <div class="cs-overlay"></div>
+          <div class="cs-content" style="position: relative; z-index: 2;">
+            <div class="cs-logo-wrapper">
+              <img src="/assets/spends/bhs.png" alt="BHS" />
+            </div>
+            <span class="cs-tag">DTC Wellness</span>
+            <h3>BHS Global Expansion Strategy</h3>
+            <div class="cs-metrics">
+              <div class="cs-metric">
+                <span class="cs-metric-val" style="background: linear-gradient(to right, #ff9900, #ff5e00); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">$2M+</span>
+                <span class="cs-metric-label">Ad Spend Scaled</span>
+              </div>
+              <div class="cs-metric">
+                <span class="cs-metric-val" style="background: linear-gradient(to right, #ff9900, #ff5e00); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">-35%</span>
+                <span class="cs-metric-label">CAC Reduction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case Study 3 (Full Width) -->
+        <div class="cs-card cs-card-full reveal-on-scroll" style="transition-delay: 0.2s;">
+          <div class="cs-bg" style="background-image: url('/assets/images/real_cs3.png'); background-position: center;"></div>
+          <div class="cs-overlay"></div>
+          <div class="cs-content" style="display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 2;">
+            <div>
+              <div class="cs-logo-wrapper">
+                <img src="/assets/spends/histrips.png" alt="Histrips" style="height: 50px;" />
+              </div>
+              <span class="cs-tag" style="color: #00ffa3; background: rgba(0, 255, 163, 0.1); border-color: rgba(0, 255, 163, 0.2);">Travel & Booking</span>
+              <h3>Histrips Lead Generation Domination</h3>
+              <p style="color: rgba(255,255,255,0.85); font-size: 1.1rem; line-height: 1.6; max-width: 80%; margin-bottom: 2rem;">
+                Restructured the entire Google & Meta funnel to capture high-intent travelers globally, bypassing traditional OTA monopolies.
+              </p>
+            </div>
+            <div class="cs-metrics" style="grid-template-columns: repeat(3, 1fr);">
+              <div class="cs-metric">
+                <span class="cs-metric-val" style="background: linear-gradient(to right, #00ffa3, #00b372); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">15K+</span>
+                <span class="cs-metric-label">Qualified Leads</span>
+              </div>
+              <div class="cs-metric">
+                <span class="cs-metric-val" style="background: linear-gradient(to right, #00ffa3, #00b372); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">5x</span>
+                <span class="cs-metric-label">Volume Increase</span>
+              </div>
+              <div class="cs-metric">
+                <span class="cs-metric-val" style="background: linear-gradient(to right, #00ffa3, #00b372); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Top 1%</span>
+                <span class="cs-metric-label">Industry Conversion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* Case Studies Grid Styles */
+    .cs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    
+    .cs-card {
+      background: #080c14;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 24px;
+      padding: 3rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .cs-bg {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      opacity: 0.4;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease;
+      z-index: 0;
+    }
+    
+    .cs-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(to top, rgba(10, 15, 25, 1) 0%, rgba(10, 15, 25, 0.7) 50%, rgba(10, 15, 25, 0.2) 100%);
+      z-index: 1;
+      transition: background 0.4s ease;
+    }
+    
+    .cs-card-full {
+      grid-column: span 2;
+    }
+
+    .cs-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(0, 198, 255, 0.3);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 198, 255, 0.1);
+    }
+    
+    .cs-card:hover .cs-bg {
+      opacity: 0.8;
+      transform: scale(1.08);
+    }
+    
+    .cs-card:hover .cs-overlay {
+      background: linear-gradient(to top, rgba(10, 15, 25, 0.95) 0%, rgba(10, 15, 25, 0.5) 50%, rgba(10, 15, 25, 0.1) 100%);
+    }
+    
+    .cs-logo-wrapper {
+      height: 40px;
+      margin-bottom: 2rem;
+    }
+    
+    .cs-logo-wrapper img {
+      height: 100%;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+    
+    .cs-card:hover .cs-logo-wrapper img {
+      opacity: 1;
+    }
+    
+    .cs-tag {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+      background: rgba(0, 198, 255, 0.1);
+      color: #00c6ff;
+      border: 1px solid rgba(0, 198, 255, 0.2);
+    }
+    
+    .cs-card h3 {
+      font-size: clamp(1.8rem, 3vw, 2.2rem);
+      color: #fff;
+      margin-bottom: 2.5rem;
+      line-height: 1.2;
+      font-family: var(--font-heading);
+    }
+    
+    .cs-metrics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 2rem;
+    }
+    
+    .cs-metric-val {
+      display: block;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 800;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.2rem;
+      line-height: 1.1;
+    }
+    
+    .cs-metric-label {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.95rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 900px) {
+      .cs-grid {
+        grid-template-columns: 1fr;
+      }
+      .cs-card-full {
+        grid-column: span 1;
+      }
+      .cs-metrics {
+        grid-template-columns: 1fr 1fr !important;
+      }
+    }
+    
+    @media (max-width: 500px) {
+      .cs-metrics {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+      }
+    }
+  </style>
+
+  <!-- CREATIVE TESTIMONIALS MARQUEE -->
+  <section class="section-padding" style="background: var(--bg-main); overflow: hidden; position: relative;">
+    <!-- Abstract Background Glows -->
+    <div style="position: absolute; top: 30%; left: -10%; width: 500px; height: 500px; background: rgba(0, 198, 255, 0.04); filter: blur(120px); border-radius: 50%; pointer-events: none;"></div>
+    <div style="position: absolute; bottom: -10%; right: -10%; width: 500px; height: 500px; background: rgba(255, 63, 108, 0.04); filter: blur(120px); border-radius: 50%; pointer-events: none;"></div>
+
+    <div class="container">
+      <div class="reveal-on-scroll" style="text-align: center; margin-bottom: 4rem; position: relative; z-index: 1;">
+        <div class="badge-lead">Success Stories</div>
+        <h2 style="font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 1rem;">What Our Clients Say After Scaling</h2>
+        <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">Read transparent reviews from brand founders scaling with our growth ecosystem.</p>
+      </div>
+    </div>
+      
+    <div class="creative-testimonial-wrapper reveal-on-scroll">
+      <div class="creative-testimonial-track">
+        
+        <!-- Original 4 Cards -->
+        <div class="t-card">
+          <div class="t-quote-bg">"</div>
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">"I've been working with MarketOps for the past six months and the experience has been genuinely impressive. Their team replies instantly, even on weekends, and the account quality is consistently top-tier."</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background: linear-gradient(135deg, #00c6ff, #0072ff);">Y</div>
+            <div class="t-author-info">
+              <h4>Yorah</h4>
+              <span>E-Commerce Founder</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card">
+          <div class="t-quote-bg">"</div>
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">"After nearly two years in dropshipping, switching to MarketOps was a game changer. Instant responses, weekend support, and quick top-ups removed stress and helped me scale confidently."</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background: linear-gradient(135deg, #ff9900, #ff5e00);">S</div>
+            <div class="t-author-info">
+              <h4>Sarah</h4>
+              <span>Scaling Dropshipping Partner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card">
+          <div class="t-quote-bg">"</div>
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">"Nearly a year with MarketOps and zero regrets. Fast responses, clear guidance, and real integrity. They don't just fix problems, they genuinely care about your growth."</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background: linear-gradient(135deg, #5a7cff, #3850b7);">V</div>
+            <div class="t-author-info">
+              <h4>Victor</h4>
+              <span>Digital Agency Operator</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card">
+          <div class="t-quote-bg">"</div>
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">"After five years in e-commerce, MarketOps stands above every agency I've worked with. Reliable ad accounts and true 24/7 support made scaling safer and faster."</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background: linear-gradient(135deg, #00ffa3, #00b372);">S</div>
+            <div class="t-author-info">
+              <h4>Saamir</h4>
+              <span>Enterprise Brand CMO</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Duplicated 4 Cards for Infinite Scroll -->
+        <div class="t-card">
+          <div class="t-quote-bg">"</div>
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">"I've been working with MarketOps for the past six months and the experience has been genuinely impressive. Their team replies instantly, even on weekends, and the account quality is consistently top-tier."</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background: linear-gradient(135deg, #00c6ff, #0072ff);">Y</div>
+            <div class="t-author-info">
+              <h4>Yorah</h4>
+              <span>E-Commerce Founder</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card">
+          <div class="t-quote-bg">"</div>
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">"After nearly two years in dropshipping, switching to MarketOps was a game changer. Instant responses, weekend support, and quick top-ups removed stress and helped me scale confidently."</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background: linear-gradient(135deg, #ff9900, #ff5e00);">S</div>
+            <div class="t-author-info">
+              <h4>Sarah</h4>
+              <span>Scaling Dropshipping Partner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card">
+          <div class="t-quote-bg">"</div>
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">"Nearly a year with MarketOps and zero regrets. Fast responses, clear guidance, and real integrity. They don't just fix problems, they genuinely care about your growth."</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background: linear-gradient(135deg, #5a7cff, #3850b7);">V</div>
+            <div class="t-author-info">
+              <h4>Victor</h4>
+              <span>Digital Agency Operator</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card">
+          <div class="t-quote-bg">"</div>
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text">"After five years in e-commerce, MarketOps stands above every agency I've worked with. Reliable ad accounts and true 24/7 support made scaling safer and faster."</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background: linear-gradient(135deg, #00ffa3, #00b372);">S</div>
+            <div class="t-author-info">
+              <h4>Saamir</h4>
+              <span>Enterprise Brand CMO</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* Creative Testimonial Marquee Styles */
+    .creative-testimonial-wrapper {
+      width: 100%;
+      overflow: hidden;
+      padding: 2rem 0;
+      position: relative;
+    }
+    
+    /* Fade edges to blend into background */
+    .creative-testimonial-wrapper::before,
+    .creative-testimonial-wrapper::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 15vw;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .creative-testimonial-wrapper::before {
+      left: 0;
+      background: linear-gradient(to right, var(--bg-main) 0%, transparent 100%);
+    }
+    .creative-testimonial-wrapper::after {
+      right: 0;
+      background: linear-gradient(to left, var(--bg-main) 0%, transparent 100%);
+    }
+
+    .creative-testimonial-track {
+      display: flex;
+      gap: 2rem;
+      width: max-content;
+      animation: t-scroll 40s linear infinite;
+    }
+
+    .creative-testimonial-track:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes t-scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-50% - 1rem)); } /* Shift by half since cards are duplicated */
+    }
+
+    .t-card {
+      position: relative;
+      width: 450px;
+      background: rgba(15, 20, 35, 0.4);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 24px;
+      padding: 3rem 2.5rem;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    /* Animated gradient border on top */
+    .t-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #00c6ff, #5a7cff, #ff3f6c);
+      opacity: 0.5;
+      transition: opacity 0.4s ease;
+    }
+
+    .t-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255,255,255,0.1);
+      background: rgba(20, 26, 45, 0.6);
+    }
+    .t-card:hover::before {
+      opacity: 1;
+    }
+
+    .t-quote-bg {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 8rem;
+      font-family: serif;
+      color: rgba(255, 255, 255, 0.03);
+      line-height: 1;
+      pointer-events: none;
+      transition: color 0.4s ease;
+    }
+
+    .t-card:hover .t-quote-bg {
+      color: rgba(0, 198, 255, 0.08);
+      transform: scale(1.1);
+    }
+
+    .t-stars {
+      color: #ffb800;
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+      margin-bottom: 1.5rem;
+      filter: drop-shadow(0 0 8px rgba(255, 184, 0, 0.4));
+    }
+
+    .t-text {
+      color: rgba(255,255,255,0.9);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      font-style: italic;
+      position: relative;
+      z-index: 1;
+    }
+
+    .t-author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 1.5rem;
+    }
+
+    .t-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.4rem;
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .t-author-info h4 {
+      font-size: 1.15rem;
+      margin-bottom: 0.15rem;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .t-author-info span {
+      font-size: 0.85rem;
+      color: var(--color-accent-cyan);
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .t-card {
+        width: 350px;
+        padding: 2rem 1.5rem;
+      }
+      .t-text {
+        font-size: 1rem;
+      }
+    }
+  </style>
+
+  <!-- TRUSTPILOT REVIEW SAMPLES -->
+  <section class="section-padding" style="background: var(--bg-main); border-top: 1px solid var(--border-light); position: relative; overflow: hidden;">
+    <!-- Huge Trustpilot Background Star -->
+    <div style="position: absolute; top: -10%; left: 5%; font-size: 40rem; color: rgba(0, 182, 122, 0.02); pointer-events: none; line-height: 1;">★</div>
+    <div style="position: absolute; bottom: -20%; right: -5%; font-size: 30rem; color: rgba(0, 182, 122, 0.02); pointer-events: none; line-height: 1;">★</div>
+
+    <div class="container">
+      <div class="reveal-on-scroll" style="text-align: center; margin-bottom: 5rem; position: relative; z-index: 1;">
+        <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(0, 182, 122, 0.1); border: 1px solid rgba(0, 182, 122, 0.2); padding: 0.5rem 1rem; border-radius: 50px; margin-bottom: 1.5rem;">
+          <span style="color: #00b67a; font-size: 1.2rem;">★</span>
+          <span style="color: #fff; font-weight: 600; font-size: 0.9rem;">Trustpilot</span>
+        </div>
+        <h2 style="font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1rem;">Rated <span style="color: #00b67a;">Excellent</span></h2>
+        <p style="color: var(--color-text-muted); font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Based on 150+ verified reviews from global partners scaling their ad spends.</p>
+      </div>
+      
+      <div class="tp-grid reveal-on-scroll">
+        <!-- Review 1 -->
+        <div class="tp-card">
+          <div class="tp-card-glow"></div>
+          <div class="tp-stars">
+            <span class="tp-star">★</span><span class="tp-star">★</span><span class="tp-star">★</span><span class="tp-star">★</span><span class="tp-star">★</span>
+          </div>
+          <h4 class="tp-title">Flawless experience with ad accounts</h4>
+          <p class="tp-text">"Ad accounts getting banned used to be a constant headache for me, but MarketOps changed that. Their profiles are extremely solid."</p>
+          <div class="tp-footer">
+            <div class="tp-author">
+              <div class="tp-avatar">H</div>
+              <div>
+                <span class="tp-name">Hans Schmidt</span>
+                <span class="tp-verified">✔ Verified</span>
+              </div>
+            </div>
+            <span class="tp-date">2 days ago</span>
+          </div>
+        </div>
+
+        <!-- Review 2 (Elevated Center) -->
+        <div class="tp-card tp-card-center">
+          <div class="tp-card-glow"></div>
+          <div class="tp-stars">
+            <span class="tp-star">★</span><span class="tp-star">★</span><span class="tp-star">★</span><span class="tp-star">★</span><span class="tp-star">★</span>
+          </div>
+          <h4 class="tp-title">Secure ads with a personal touch</h4>
+          <p class="tp-text">"Their agency profiles are highly reliable and secure. Scaling daily paid spends has honestly never been smoother."</p>
+          <div class="tp-footer">
+            <div class="tp-author">
+              <div class="tp-avatar">S</div>
+              <div>
+                <span class="tp-name">Sacha Meurs</span>
+                <span class="tp-verified">✔ Verified</span>
+              </div>
+            </div>
+            <span class="tp-date">1 week ago</span>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="tp-card">
+          <div class="tp-card-glow"></div>
+          <div class="tp-stars">
+            <span class="tp-star">★</span><span class="tp-star">★</span><span class="tp-star">★</span><span class="tp-star">★</span><span class="tp-star">★</span>
+          </div>
+          <h4 class="tp-title">Cut CPM and boosted ad-performance</h4>
+          <p class="tp-text">"In just two months, they cut my CPM in half and increased ROAS by 40% with amazing creative angles."</p>
+          <div class="tp-footer">
+            <div class="tp-author">
+              <div class="tp-avatar">F</div>
+              <div>
+                <span class="tp-name">Frank Bauch</span>
+                <span class="tp-verified">✔ Verified</span>
+              </div>
+            </div>
+            <span class="tp-date">3 weeks ago</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* Creative Trustpilot Section Styles */
+    .tp-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .tp-grid:hover .tp-card:not(:hover) {
+      filter: grayscale(80%) opacity(0.4);
+      transform: scale(0.95);
+    }
+
+    .tp-card {
+      background: rgba(11, 16, 25, 0.6);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(0, 182, 122, 0.1);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      position: relative;
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tp-card-center {
+      transform: translateY(-20px);
+      background: rgba(11, 16, 25, 0.8);
+      border-color: rgba(0, 182, 122, 0.3);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(0, 182, 122, 0.1);
+    }
+
+    .tp-card-glow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 50% 0%, rgba(0, 182, 122, 0.15) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      pointer-events: none;
+    }
+
+    .tp-card:hover {
+      transform: translateY(-15px) scale(1.05) !important;
+      border-color: rgba(0, 182, 122, 0.5);
+      box-shadow: 0 30px 60px rgba(0, 182, 122, 0.15), inset 0 0 20px rgba(0, 182, 122, 0.05);
+      z-index: 10;
+    }
+
+    .tp-card:hover .tp-card-glow {
+      opacity: 1;
+    }
+
+    .tp-stars {
+      display: flex;
+      gap: 0.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .tp-star {
+      background: #00b67a;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      font-size: 1.1rem;
+      padding-bottom: 2px;
+      border-radius: 2px;
+    }
+
+    .tp-title {
+      color: #fff;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    .tp-text {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      flex-grow: 1;
+    }
+
+    .tp-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 1.5rem;
+    }
+
+    .tp-author {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .tp-avatar {
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .tp-name {
+      display: block;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 0.1rem;
+    }
+
+    .tp-verified {
+      display: block;
+      color: #00b67a;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .tp-date {
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 992px) {
+      .tp-grid {
+        grid-template-columns: 1fr;
+      }
+      .tp-card-center {
+        transform: translateY(0);
+      }
+      .tp-grid:hover .tp-card:not(:hover) {
+        transform: scale(1);
+      }
+    }
+  </style>
+
+  <!-- CALENDLY EMBED SECTION -->
+  <section id="calendly" class="section-padding" style="background: var(--bg-main);">
+    <div class="container">
+      <div class="reveal-on-scroll" style="text-align: center; margin-bottom: 4rem;">
+        <div class="badge-lead">Consultation</div>
+        <h2 style="font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 1rem;">Book a Free Growth Strategy Audit</h2>
+        <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">Select an slot below to connect directly with a senior MarketOps strategy leader.</p>
+      </div>
+      
+      <div class="calendly-section reveal-on-scroll">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; padding: 2rem;">
+          <div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">What to expect during the audit:</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 1.2rem; margin: 2rem 0;">
+              <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                <span style="color: var(--color-accent-cyan); font-weight: bold;">[01]</span>
+                <div>
+                  <h4 style="font-size: 1.05rem; margin-bottom: 0.15rem;">Infrastructure Review</h4>
+                  <p style="color: var(--color-text-muted); font-size: 0.85rem;">Evaluation of your current platform trust score and ad restrictions audit.</p>
+                </div>
+              </li>
+              <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                <span style="color: var(--color-accent-cyan); font-weight: bold;">[02]</span>
+                <div>
+                  <h4 style="font-size: 1.05rem; margin-bottom: 0.15rem;">Creative Angles Testing Audit</h4>
+                  <p style="color: var(--color-text-muted); font-size: 0.85rem;">Review of hook ratios on your top-performing marketing creatives.</p>
+                </div>
+              </li>
+              <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                <span style="color: var(--color-accent-cyan); font-weight: bold;">[03]</span>
+                <div>
+                  <h4 style="font-size: 1.05rem; margin-bottom: 0.15rem;">Scale Blueprint</h4>
+                  <p style="color: var(--color-text-muted); font-size: 0.85rem;">Customized media buying blueprint mapping out scaling options to double spend safely.</p>
+                </div>
+              </li>
+            </ul>
+            <div style="margin-top: 2rem;">
+              <a href="https://wa.me/919424995426?text=Hi%20I%20want%20to%20book%20a%20call" target="_blank" class="btn btn-primary">Book Directly on WhatsApp</a>
+            </div>
+          </div>
+          <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-light); border-radius: 16px; padding: 2.5rem; text-align: center;">
+            <h4 style="font-size: 1.25rem; margin-bottom: 1.5rem; font-family: var(--font-heading);">Schedule Session</h4>
+            <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 2rem;">Select slot on our live team calendar</p>
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <a href="https://wa.me/919424995426" class="btn btn-secondary" style="font-size: 0.9rem;">💬 WhatsApp Direct booking</a>
+              <a href="mailto:connect@marketops.in" class="btn btn-secondary" style="font-size: 0.9rem;">📧 Email: connect@marketops.in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOME PAGE CANVAS ANIMATION SCRIPT -->
+  <script>
+    const canvas = document.getElementById('homeCanvas') as HTMLCanvasElement;
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      
+      let w, h, nodes;
+      const nodeCount = 100;
+      // High-end SaaS Brand Colors: Cyan, Deep Purple, Pink
+      const colors = ['#00e5ff', '#b53cff', '#ff3f6c'];
+
+      function resize() {
+        const parent = canvas.parentElement;
+        w = canvas.width = parent.offsetWidth;
+        h = canvas.height = parent.offsetHeight;
+      }
+
+      class Node {
+        x: number;
+        y: number;
+        vx: number;
+        vy: number;
+        radius: number;
+        color: string;
+
+        constructor() {
+          this.x = Math.random() * w;
+          this.y = Math.random() * h;
+          // Slower, more elegant movement for homepage
+          this.vx = (Math.random() - 0.5) * 0.8;
+          this.vy = (Math.random() - 0.5) * 0.8;
+          this.radius = Math.random() * 2 + 1;
+          this.color = colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        update() {
+          this.x += this.vx;
+          this.y += this.vy;
+          
+          if (this.x < 0 || this.x > w) this.vx *= -1;
+          if (this.y < 0 || this.y > h) this.vy *= -1;
+        }
+
+        draw() {
+          if(!ctx) return;
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = this.color;
+          ctx.fill();
+          ctx.shadowBlur = 15;
+          ctx.shadowColor = this.color;
+        }
+      }
+
+      function init() {
+        resize();
+        nodes = [];
+        for(let i=0; i<nodeCount; i++) {
+          nodes.push(new Node());
+        }
+      }
+
+      function animate() {
+        if(!ctx) return;
+        // Subtle dark trail for premium blur effect
+        ctx.fillStyle = 'rgba(5, 8, 16, 0.2)'; 
+        ctx.fillRect(0, 0, w, h);
+        
+        nodes.forEach(n => {
+          n.update();
+          n.draw();
+        });
+        
+        // Draw constellation connections
+        for(let i=0; i<nodes.length; i++) {
+          for(let j=i+1; j<nodes.length; j++) {
+            const dx = nodes[i].x - nodes[j].x;
+            const dy = nodes[i].y - nodes[j].y;
+            const dist = Math.sqrt(dx*dx + dy*dy);
+            
+            // Connect nodes if they are close enough
+            if(dist < 150) {
+              ctx.beginPath();
+              // Opacity depends on distance
+              ctx.strokeStyle = `rgba(0, 229, 255, ${0.15 - dist/1000})`;
+              ctx.lineWidth = 0.6;
+              ctx.moveTo(nodes[i].x, nodes[i].y);
+              ctx.lineTo(nodes[j].x, nodes[j].y);
+              ctx.stroke();
+            }
+          }
+        }
+        
+        requestAnimationFrame(animate);
+      }
+
+      window.addEventListener('resize', resize);
+      init();
+      animate();
+    }
+  </script>
+</Layout>

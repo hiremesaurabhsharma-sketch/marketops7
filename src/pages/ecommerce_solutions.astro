@@ -1,0 +1,642 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Ecommerce Solutions | MarketOps" description="Complete e-commerce marketplace management. From store setup to sales growth, we handle audits, SEO optimization, PPC management, and quick commerce scaling.">
+  <!-- HERO SECTION -->
+  <section class="hero-wrapper" style="position: relative; overflow: hidden;">
+    <canvas id="ecomCanvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; opacity: 0.7;"></canvas>
+    <div class="hero-overlay" style="background: linear-gradient(180deg, rgba(11, 15, 25, 0.3) 0%, var(--bg-main) 100%); z-index: 1;"></div>
+    <div class="container" style="position: relative; z-index: 2; text-align: center;">
+      <div class="reveal-on-scroll">
+        <div class="badge-lead">E-Commerce Management</div>
+        <h1 class="gradient-text" style="font-size: clamp(2.2rem, 6vw, 4.2rem); max-width: 950px; margin: 0 auto 1.5rem;">
+          From Store Setup to Sales Growth — <br><span class="gradient-text-alt" style="font-weight: 800;">“We Handle Everything”</span>
+        </h1>
+        <p style="font-size: clamp(1rem, 2.5vw, 1.25rem); color: var(--color-text-muted); max-width: 700px; margin: 0 auto 2.5rem;">
+          Dominate digital marketplaces and quick-commerce channels. Our specialist team automates listing optimization, PPC management, and multi-channel scaling.
+        </p>
+        <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+          <a href="#calendly" class="btn btn-primary">Scale Your Store</a>
+          <a href="#challenges" class="btn btn-secondary">Analyze Challenges</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS MARQUEE SECTION -->
+  <section class="section-padding" style="background: #0a0d16; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); padding: 3rem 0; overflow: hidden;">
+    <div class="container">
+      <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center; text-align: center;">
+        <span style="font-size: 0.9rem; text-transform: uppercase; color: var(--color-accent-cyan); font-weight: bold; letter-spacing: 0.1em;">Our Supported E-Commerce Marketplaces</span>
+        <div class="marquee-container" style="width: 100%;">
+          <div class="marquee-content">
+            <div class="marquee-card" style="width: 160px; height: 80px;"><span style="font-weight: 800; font-size: 1.2rem; color: #ff9900;">Amazon</span></div>
+            <div class="marquee-card" style="width: 160px; height: 80px;"><span style="font-weight: 800; font-size: 1.2rem; color: #2874f0;">Flipkart</span></div>
+            <div class="marquee-card" style="width: 160px; height: 80px;"><span style="font-weight: 800; font-size: 1.2rem; color: #ff3f6c;">Myntra</span></div>
+            <div class="marquee-card" style="width: 160px; height: 80px;"><span style="font-weight: 800; font-size: 1.2rem; color: #f43397;">Meesho</span></div>
+            <div class="marquee-card" style="width: 160px; height: 80px;"><span style="font-weight: 800; font-size: 1.2rem; color: #ecff00; background: #000; padding: 2px 8px; border-radius: 4px;">Blinkit</span></div>
+            <div class="marquee-card" style="width: 160px; height: 80px;"><span style="font-weight: 800; font-size: 1.2rem; color: #5c1896;">Zepto</span></div>
+            <div class="marquee-card" style="width: 160px; height: 80px;"><span style="font-weight: 800; font-size: 1.2rem; color: #fc8019;">Instamart</span></div>
+            <!-- Duplicate for infinite scroll -->
+            <div class="marquee-card" style="width: 160px; height: 80px;"><span style="font-weight: 800; font-size: 1.2rem; color: #ff9900;">Amazon</span></div>
+            <div class="marquee-card" style="width: 160px; height: 80px;"><span style="font-weight: 800; font-size: 1.2rem; color: #2874f0;">Flipkart</span></div>
+            <div class="marquee-card" style="width: 160px; height: 80px;"><span style="font-weight: 800; font-size: 1.2rem; color: #ff3f6c;">Myntra</span></div>
+            <div class="marquee-card" style="width: 160px; height: 80px;"><span style="font-weight: 800; font-size: 1.2rem; color: #f43397;">Meesho</span></div>
+            <div class="marquee-card" style="width: 160px; height: 80px;"><span style="font-weight: 800; font-size: 1.2rem; color: #ecff00; background: #000; padding: 2px 8px; border-radius: 4px;">Blinkit</span></div>
+            <div class="marquee-card" style="width: 160px; height: 80px;"><span style="font-weight: 800; font-size: 1.2rem; color: #5c1896;">Zepto</span></div>
+            <div class="marquee-card" style="width: 160px; height: 80px;"><span style="font-weight: 800; font-size: 1.2rem; color: #fc8019;">Instamart</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHALLENGES SECTION (BENTO GRID) -->
+  <section id="challenges" class="section-padding" style="background: #0d121f;">
+    <div class="container">
+      <div class="reveal-on-scroll" style="text-align: center; margin-bottom: 5rem;">
+        <div class="badge-lead">Marketplace Roadblocks</div>
+        <h2 style="font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 1.5rem;">Top Challenges Limiting Your Marketplace Growth</h2>
+        <p style="color: var(--color-text-muted); max-width: 650px; margin: 0 auto;">Most brands hit a ceiling on third-party channels due to systemic optimization lags. Here are the core pain points:</p>
+      </div>
+
+      <div class="bento-gallery">
+        <!-- Item 1: Wide -->
+        <div class="bento-item item-wide reveal-on-scroll">
+          <div class="bento-graphic" style="background-image: url('/assets/images/amazon_store.png');"></div>
+          <div class="bento-overlay"></div>
+          <div class="bento-content">
+            <h3 class="bento-title">Low Product Visibility</h3>
+            <p class="bento-desc">Your products are not ranking for high-converting keywords, resulting in low organic traffic and fewer sales on Amazon & Flipkart.</p>
+          </div>
+        </div>
+
+        <!-- Item 2: Square -->
+        <div class="bento-item item-square reveal-on-scroll">
+          <div class="bento-graphic" style="background-image: url('/assets/images/ecommerce_analytics.png');"></div>
+          <div class="bento-overlay"></div>
+          <div class="bento-content">
+            <h3 class="bento-title">Poor Ad Performance</h3>
+            <p class="bento-desc">Advertising campaigns spend more but deliver low conversions.</p>
+          </div>
+        </div>
+
+        <!-- Item 3: Square -->
+        <div class="bento-item item-square reveal-on-scroll">
+          <div class="bento-graphic" style="background-image: url('/assets/images/flipkart_app.png');"></div>
+          <div class="bento-overlay"></div>
+          <div class="bento-content">
+            <h3 class="bento-title">Listing Issues</h3>
+            <p class="bento-desc">Unoptimized titles and images reduce click-through rate.</p>
+          </div>
+        </div>
+
+        <!-- Item 4: Square -->
+        <div class="bento-item item-square reveal-on-scroll">
+          <div class="bento-graphic" style="background-image: url('/assets/images/ecommerce_warehouse.png');"></div>
+          <div class="bento-overlay"></div>
+          <div class="bento-content">
+            <h3 class="bento-title">Inventory Problems</h3>
+            <p class="bento-desc">Frequent stock-outs impact search visibility and margins.</p>
+          </div>
+        </div>
+
+        <!-- Item 5: Square -->
+        <div class="bento-item item-square reveal-on-scroll">
+          <div class="bento-graphic" style="background-image: url('/assets/images/ecommerce_cart.png');"></div>
+          <div class="bento-overlay"></div>
+          <div class="bento-content">
+            <h3 class="bento-title">Buy Box Issues</h3>
+            <p class="bento-desc">Heavy competition leads to Buy Box loss and reduced sales.</p>
+          </div>
+        </div>
+
+        <!-- Item 6: Wide -->
+        <div class="bento-item item-wide reveal-on-scroll">
+          <div class="bento-graphic" style="background-image: url('/assets/images/amazon_box.png');"></div>
+          <div class="bento-overlay"></div>
+          <div class="bento-content">
+            <h3 class="bento-title">Account Growth Stagnation</h3>
+            <p class="bento-desc">Without a proper strategy, many marketplace accounts struggle to scale revenue, launch new products, or expand globally.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS SECTION (INTERACTIVE CARDS) -->
+  <section class="section-padding" style="background: var(--bg-main);">
+    <div class="container">
+      <div class="reveal-on-scroll" style="text-align: center; margin-bottom: 5rem;">
+        <div class="badge-lead">Our Method</div>
+        <h2 style="font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 1.5rem;">How We Solve Your Marketplace Struggles</h2>
+        <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">We implement data-driven systems to reverse sales stagnation and drive absolute ROI.</p>
+      </div>
+
+      <div class="creative-cards-grid">
+        <div class="cc-card reveal-on-scroll">
+          <div class="cc-bg" style="background-image: url('/assets/images/amazon_store.png');"></div>
+          <div class="cc-content">
+            <h4 class="gradient-text">01. Account Audit</h4>
+            <p>We analyze your Amazon/Flipkart health, pricing, and competitors to identify immediate growth triggers.</p>
+          </div>
+        </div>
+        
+        <div class="cc-card reveal-on-scroll">
+          <div class="cc-bg" style="background-image: url('/assets/images/flipkart_app.png');"></div>
+          <div class="cc-content">
+            <h4 class="gradient-text">02. SEO Optimization</h4>
+            <p>We craft copy and optimize titles, high-conversion keywords, and A+ images to maximize organic rank.</p>
+          </div>
+        </div>
+        
+        <div class="cc-card reveal-on-scroll">
+          <div class="cc-bg" style="background-image: url('/assets/images/ecommerce_analytics.png');"></div>
+          <div class="cc-content">
+            <h4 class="gradient-text">03. PPC Management</h4>
+            <p>We scale and optimize hyper-targeted ad campaigns to lower your ACOS and elevate rankings.</p>
+          </div>
+        </div>
+        
+        <div class="cc-card reveal-on-scroll">
+          <div class="cc-bg" style="background-image: url('/assets/images/ecommerce_warehouse.png');"></div>
+          <div class="cc-content">
+            <h4 class="gradient-text">04. Inventory Strategy</h4>
+            <p>We execute precise stock forecasts and algorithmic pricing to keep your Buy Box ownership intact.</p>
+          </div>
+        </div>
+        
+        <div class="cc-card reveal-on-scroll">
+          <div class="cc-bg" style="background-image: url('/assets/images/amazon_box.png');"></div>
+          <div class="cc-content">
+            <h4 class="gradient-text">05. Brand Growth</h4>
+            <p>We build beautiful storefront modules and interactive A+ modules that raise buyers' trust instantly.</p>
+          </div>
+        </div>
+        
+        <div class="cc-card reveal-on-scroll">
+          <div class="cc-bg" style="background-image: url('/assets/images/ecommerce_cart.png');"></div>
+          <div class="cc-content">
+            <h4 class="gradient-text">06. Scaling & Live Ops</h4>
+            <p>We continuously audit metrics, adjust live bids, and deploy resources to expand marketplace operations globally.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQS SECTION -->
+  <section class="section-padding" style="background: #080c14; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+    <div class="container">
+      <div class="reveal-on-scroll" style="text-align: center; margin-bottom: 4rem;">
+        <div class="badge-lead">FAQ</div>
+        <h2 style="font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 1rem;">Frequently Asked Questions</h2>
+        <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">Everything you need to know about our E-commerce Management solutions.</p>
+      </div>
+
+      <div class="accordion-wrapper reveal-on-scroll">
+        <!-- Item 1 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span class="accordion-title">1. Which marketplaces do you manage?</span>
+            <svg class="accordion-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+          <div class="accordion-content">
+            <p>We provide complete e-commerce solutions for marketplaces including Amazon, Flipkart, Myntra, Meesho, Blinkit, Zepto, and Swiggy Instamart.</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span class="accordion-title">2. Do you help with new seller account setup?</span>
+            <svg class="accordion-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+          <div class="accordion-content">
+            <p>Yes, we assist with complete marketplace account setup, brand registration, catalog creation, and onboarding support.</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span class="accordion-title">3. Can you optimize our product listings?</span>
+            <svg class="accordion-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+          <div class="accordion-content">
+            <p>Absolutely. We optimize titles, bullet points, descriptions, keywords, A+ content, and product images to improve visibility and conversions.</p>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span class="accordion-title">4. Do you manage PPC and advertising campaigns?</span>
+            <svg class="accordion-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+          <div class="accordion-content">
+            <p>Yes, we create and manage performance-driven advertising campaigns to improve sales, rankings, and ROAS while reducing ACOS.</p>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span class="accordion-title">5. Can you help increase sales on marketplaces?</span>
+            <svg class="accordion-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+          <div class="accordion-content">
+            <p>Our strategies focus on improving product visibility, conversion rates, ad performance, and overall account growth to drive higher sales.</p>
+          </div>
+        </div>
+        <!-- Item 6 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span class="accordion-title">6. Do you support Quick Commerce platforms?</span>
+            <svg class="accordion-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+          <div class="accordion-content">
+            <p>Yes, we help brands scale on quick commerce platforms like Blinkit, Zepto, and Swiggy Instamart with catalog management and growth strategies.</p>
+          </div>
+        </div>
+        <!-- Item 7 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span class="accordion-title">7. How do you improve product rankings?</span>
+            <svg class="accordion-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+          <div class="accordion-content">
+            <p>We use marketplace SEO, keyword optimization, PPC management, inventory planning, and conversion-focused strategies to improve rankings organically.</p>
+          </div>
+        </div>
+        <!-- Item 8 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span class="accordion-title">8. Do you provide complete account management services?</span>
+            <svg class="accordion-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+          <div class="accordion-content">
+            <p>Yes, we offer end-to-end marketplace management including listings, ads, inventory planning, pricing strategy, reports, and growth consulting.</p>
+          </div>
+        </div>
+        <!-- Item 9 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span class="accordion-title">9. Can you manage multiple marketplaces together?</span>
+            <svg class="accordion-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+          <div class="accordion-content">
+            <p>Yes, we provide centralized marketplace management solutions for brands selling across multiple e-commerce platforms.</p>
+          </div>
+        </div>
+        <!-- Item 10 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span class="accordion-title">10. Why should brands choose MarketOps For e-commerce solutions?</span>
+            <svg class="accordion-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+          <div class="accordion-content">
+            <p>We focus on data-driven growth, marketplace expertise, conversion optimization, and long-term scaling strategies designed for sustainable success.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALENDLY EMBED SECTION -->
+  <section id="calendly" class="section-padding" style="background: var(--bg-main);">
+    <div class="container">
+      <div class="reveal-on-scroll" style="text-align: center; margin-bottom: 4rem;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Setup Your Free E-Commerce Audit</h2>
+        <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">Connect with a marketplace specialist today to audit listing issues and ad spend waste.</p>
+      </div>
+      
+      <div class="calendly-section reveal-on-scroll">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; padding: 2rem;">
+          <div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">What We Will Discover:</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 1.2rem; margin: 2rem 0;">
+              <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                <span style="color: var(--color-accent-cyan); font-weight: bold;">[01]</span>
+                <div>
+                  <h4 style="font-size: 1.05rem; margin-bottom: 0.15rem;">Keywords Indexing Gaps</h4>
+                  <p style="color: var(--color-text-muted); font-size: 0.85rem;">Find which keywords your top 3 competitors own that you are locked out of.</p>
+                </div>
+              </li>
+              <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                <span style="color: var(--color-accent-cyan); font-weight: bold;">[02]</span>
+                <div>
+                  <h4 style="font-size: 1.05rem; margin-bottom: 0.15rem;">PPC Waste Auditing</h4>
+                  <p style="color: var(--color-text-muted); font-size: 0.85rem;">Pinpoint high-ACOS matches and target configurations draining your margins daily.</p>
+                </div>
+              </li>
+              <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
+                <span style="color: var(--color-accent-cyan); font-weight: bold;">[03]</span>
+                <div>
+                  <h4 style="font-size: 1.05rem; margin-bottom: 0.15rem;">Conversion Rate Blueprint</h4>
+                  <p style="color: var(--color-text-muted); font-size: 0.85rem;">A custom visual structure proposal to optimize listings, bullets, and storefront modules.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-light); border-radius: 16px; padding: 2.5rem; text-align: center;">
+            <h4 style="font-size: 1.25rem; margin-bottom: 1.5rem; font-family: var(--font-heading);">Schedule Session</h4>
+            <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 2rem;">Select slot on our live team calendar</p>
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <a href="https://wa.me/919424995426" class="btn btn-primary" style="font-size: 0.9rem;">💬 WhatsApp Direct booking</a>
+              <a href="mailto:connect@marketops.in" class="btn btn-secondary" style="font-size: 0.9rem;">📧 Email: connect@marketops.in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- E-COMMERCE CANVAS ANIMATION SCRIPT -->
+  <script>
+    const canvas = document.getElementById('ecomCanvas') as HTMLCanvasElement;
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      
+      let w, h, particles;
+      const particleCount = 120;
+      // Amazon Orange and Flipkart Blue, plus slight neon variations
+      const colors = ['#ff9900', '#2874f0', '#00e5ff', '#ff3f6c'];
+
+      function resize() {
+        const parent = canvas.parentElement;
+        w = canvas.width = parent.offsetWidth;
+        h = canvas.height = parent.offsetHeight;
+      }
+
+      class Particle {
+        x: number;
+        y: number;
+        vx: number;
+        vy: number;
+        size: number;
+        color: string;
+
+        constructor() {
+          this.x = Math.random() * w;
+          this.y = Math.random() * h;
+          this.vx = (Math.random() - 0.5) * 1.5;
+          this.vy = (Math.random() - 0.5) * 1.5 - 0.5; // Drift upwards like growth
+          this.size = Math.random() * 2 + 1.5;
+          this.color = colors[Math.floor(Math.random() * colors.length)];
+        }
+        update() {
+          this.x += this.vx;
+          this.y += this.vy;
+          
+          if (this.x < 0 || this.x > w) this.vx *= -1;
+          if (this.y < 0) this.y = h;
+          if (this.y > h) this.y = 0;
+        }
+        draw() {
+          if(!ctx) return;
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.fillStyle = this.color;
+          ctx.fill();
+          ctx.shadowBlur = 20;
+          ctx.shadowColor = this.color;
+        }
+      }
+
+      function init() {
+        resize();
+        particles = [];
+        for(let i=0; i<particleCount; i++) {
+          particles.push(new Particle());
+        }
+      }
+
+      function animate() {
+        if(!ctx) return;
+        ctx.fillStyle = 'rgba(11, 15, 25, 0.15)'; // Dark trailing effect
+        ctx.fillRect(0, 0, w, h);
+        
+        particles.forEach(p => {
+          p.update();
+          p.draw();
+        });
+        
+        // Draw connecting lines to form the "network"
+        for(let i=0; i<particles.length; i++) {
+          for(let j=i; j<particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx*dx + dy*dy);
+            
+            if(dist < 120) {
+              ctx.beginPath();
+              ctx.strokeStyle = `rgba(255, 255, 255, ${0.12 - dist/1000})`;
+              ctx.lineWidth = 0.5;
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.stroke();
+            }
+          }
+        }
+        
+        requestAnimationFrame(animate);
+      }
+
+      window.addEventListener('resize', resize);
+      init();
+      animate();
+    }
+  </script>
+</Layout>
+
+<style>
+  /* -------------------------------------
+     BENTO GALLERY (Premium Asymmetrical Grid)
+  -------------------------------------- */
+  .bento-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, minmax(280px, auto));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .bento-item {
+    position: relative;
+    border-radius: 32px;
+    background: rgba(20, 25, 45, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2.5rem;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+  }
+  
+  .bento-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+    border-color: rgba(255,255,255,0.15);
+    z-index: 10;
+  }
+  
+  /* Layout Spans */
+  .item-wide {
+    grid-column: span 2;
+  }
+  .item-square {
+    grid-column: span 1;
+  }
+  .item-tall {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  
+  @media (max-width: 992px) {
+    .bento-gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .bento-gallery {
+      grid-template-columns: 1fr;
+    }
+    .item-wide, .item-square, .item-tall {
+      grid-column: span 1;
+    }
+  }
+  
+  /* Graphics & Photorealistic Images */
+  .bento-graphic {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .bento-item:hover .bento-graphic {
+    transform: scale(1.08);
+  }
+  
+  .bento-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(10, 15, 25, 1) 0%, rgba(10, 15, 25, 0.6) 50%, rgba(10, 15, 25, 0.1) 100%);
+    z-index: 1;
+    transition: background 0.4s ease;
+  }
+
+  .bento-item:hover .bento-overlay {
+    background: linear-gradient(to top, rgba(10, 15, 25, 0.9) 0%, rgba(10, 15, 25, 0.4) 50%, rgba(10, 15, 25, 0.05) 100%);
+  }
+  
+  /* Content Overlay */
+  .bento-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .bento-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+  
+  .bento-desc {
+    color: rgba(255,255,255,0.7);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* -------------------------------------
+     CREATIVE CARDS GRID (Dynamic Hover)
+  -------------------------------------- */
+  .creative-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .cc-card {
+    position: relative;
+    height: 320px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #0d121f;
+    border: 1px solid rgba(255,255,255,0.05);
+    cursor: crosshair;
+  }
+  
+  .cc-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    opacity: 0.5;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 0;
+  }
+  
+  .cc-card:hover .cc-bg {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  
+  .cc-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(8, 12, 20, 1) 15%, rgba(8, 12, 20, 0.6) 60%, rgba(8, 12, 20, 0.2) 100%);
+    z-index: 1;
+    transition: background 0.4s ease;
+  }
+  
+  .cc-card:hover::before {
+    background: linear-gradient(to top, rgba(8, 12, 20, 0.95) 20%, rgba(8, 12, 20, 0.5) 65%, rgba(8, 12, 20, 0.1) 100%);
+  }
+  
+  .cc-content {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 2.5rem;
+    z-index: 2;
+    transition: transform 0.4s ease;
+  }
+  
+  .cc-card:hover .cc-content {
+    transform: translateY(-10px);
+  }
+  
+  .cc-content h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  
+  .cc-content p {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+  
+  .cc-card:hover .cc-content p {
+    opacity: 1;
+    max-height: 100px;
+    margin-top: 1rem;
+  }
+</style>
