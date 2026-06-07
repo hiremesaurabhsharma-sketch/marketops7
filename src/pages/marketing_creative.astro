@@ -157,7 +157,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <div class="video-section-wrapper reveal-on-scroll" style="max-width: 900px; margin: 0 auto;">
-        <video src="assets/home/home.webm" autoplay loop muted playsinline style="width: 100%; border-radius: 16px; border: 1px solid var(--border-light);"></video>
+        <video data-src="assets/home/home.webm" class="lazy-video" autoplay loop muted playsinline preload="none" style="width: 100%; border-radius: 16px; border: 1px solid var(--border-light);"></video>
       </div>
     </div>
   </section>

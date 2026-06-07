@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFaqAccordions();
   initStatCounters();
   initVideoMuteControls();
+  initLazyVideos();
 });
 
 /* 1. STICKY NAVBAR BACKGROUND TRANSITIONS */
@@ -297,4 +298,50 @@ function initVideoMuteControls() {
     // Initialize properly
     updateIcon();
   });
+}
+
+/* 9. LAZY LOAD VIDEOS ON MOBILE FOR PERFORMANCE */
+function initLazyVideos() {
+  const lazyVideos = document.querySelectorAll('video.lazy-video');
+  if (lazyVideos.length === 0) return;
+
+  if ('IntersectionObserver' in window) {
+    const videoObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const video = entry.target;
+          
+          // Switch data-src to src
+          if (video.dataset.src) {
+            video.src = video.dataset.src;
+          }
+          
+          // Switch source tags if any
+          const sources = video.querySelectorAll('source');
+          sources.forEach(source => {
+            if (source.dataset.src) {
+              source.src = source.dataset.src;
+            }
+          });
+          
+          video.load();
+          if (video.hasAttribute('autoplay')) {
+            video.play().catch(e => console.log('Autoplay prevented:', e));
+          }
+          
+          observer.unobserve(video);
+        }
+      });
+    }, { rootMargin: "0px 0px 400px 0px" }); // load before it enters the screen
+
+    lazyVideos.forEach(video => {
+      videoObserver.observe(video);
+    });
+  } else {
+    // Fallback for older browsers
+    lazyVideos.forEach(video => {
+      if (video.dataset.src) video.src = video.dataset.src;
+      video.load();
+    });
+  }
 }
