@@ -453,14 +453,19 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(12, 59, 251, 0.08);
-  border: 1px solid rgba(3, 169, 224, 0.2);
-  padding: 0.5rem 1rem;
+  background: rgba(12, 59, 251, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  padding: 0.4rem 1.2rem;
   border-radius: 50px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--color-accent-cyan);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #00e5ff;
   margin-bottom: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.15), inset 0 0 10px rgba(12, 59, 251, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 /* Infinite Marquee Loop CSS */
