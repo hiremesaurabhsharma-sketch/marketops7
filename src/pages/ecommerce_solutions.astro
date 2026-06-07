@@ -4,8 +4,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Ecommerce Solutions | MarketOps" description="Complete e-commerce marketplace management. From store setup to sales growth, we handle audits, SEO optimization, PPC management, and quick commerce scaling.">
   <!-- HERO SECTION -->
-  <section class="hero-wrapper" style="position: relative; overflow: hidden;">
-    <canvas id="ecomCanvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; opacity: 0.7;"></canvas>
+  <section class="hero-wrapper" style="position: relative; overflow: hidden; background: #050810;">
     <div class="hero-overlay" style="background: linear-gradient(180deg, rgba(11, 15, 25, 0.3) 0%, var(--bg-main) 100%); z-index: 1;"></div>
     <div class="container" style="position: relative; z-index: 2; text-align: center;">
       <div class="reveal-on-scroll">
@@ -350,117 +349,6 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- E-COMMERCE CANVAS ANIMATION SCRIPT -->
-  <script>
-    const canvas = document.getElementById('ecomCanvas') as HTMLCanvasElement;
-    if (canvas) {
-      const ctx = canvas.getContext('2d');
-      
-      let w, h, particles;
-      // High performance tweak: reduce nodes on mobile
-      const particleCount = window.innerWidth < 768 ? 30 : 120;
-      // Amazon Orange and Flipkart Blue, plus slight neon variations
-      const colors = ['#ff9900', '#2874f0', '#00e5ff', '#ff3f6c'];
-
-      function resize() {
-        const parent = canvas.parentElement;
-        w = canvas.width = parent.offsetWidth;
-        h = canvas.height = parent.offsetHeight;
-      }
-
-      class Particle {
-        x: number;
-        y: number;
-        vx: number;
-        vy: number;
-        size: number;
-        color: string;
-
-        constructor() {
-          this.x = Math.random() * w;
-          this.y = Math.random() * h;
-          this.vx = (Math.random() - 0.5) * 1.5;
-          this.vy = (Math.random() - 0.5) * 1.5 - 0.5; // Drift upwards like growth
-          this.size = Math.random() * 2 + 1.5;
-          this.color = colors[Math.floor(Math.random() * colors.length)];
-        }
-        update() {
-          this.x += this.vx;
-          this.y += this.vy;
-          
-          if (this.x < 0 || this.x > w) this.vx *= -1;
-          if (this.y < 0) this.y = h;
-          if (this.y > h) this.y = 0;
-        }
-        draw() {
-          if(!ctx) return;
-          ctx.beginPath();
-          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-          ctx.fillStyle = this.color;
-          ctx.fill();
-          ctx.shadowBlur = 20;
-          ctx.shadowColor = this.color;
-        }
-      }
-
-      function init() {
-        resize();
-        particles = [];
-        for(let i=0; i<particleCount; i++) {
-          particles.push(new Particle());
-        }
-      }
-
-      function animate() {
-        if(!ctx) return;
-        ctx.fillStyle = 'rgba(11, 15, 25, 0.15)'; // Dark trailing effect
-        ctx.fillRect(0, 0, w, h);
-        
-        particles.forEach(p => {
-          p.update();
-          p.draw();
-        });
-        
-        // Draw connecting lines to form the "network"
-        for(let i=0; i<particles.length; i++) {
-          for(let j=i; j<particles.length; j++) {
-            const dx = particles[i].x - particles[j].x;
-            const dy = particles[i].y - particles[j].y;
-            const dist = Math.sqrt(dx*dx + dy*dy);
-            
-            if(dist < 120) {
-              ctx.beginPath();
-              ctx.strokeStyle = `rgba(255, 255, 255, ${0.12 - dist/1000})`;
-              ctx.lineWidth = 0.5;
-              ctx.moveTo(particles[i].x, particles[i].y);
-              ctx.lineTo(particles[j].x, particles[j].y);
-              ctx.stroke();
-            }
-          }
-        }
-        
-        if (isCanvasVisible) {
-          requestAnimationFrame(animate);
-        }
-      }
-
-      window.addEventListener('resize', resize);
-      init();
-      
-      // Intersection Observer to pause animation when scrolled out of view
-      let isCanvasVisible = true;
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          isCanvasVisible = entry.isIntersecting;
-          if (isCanvasVisible) {
-            animate();
-          }
-        });
-      }, { rootMargin: "100px" });
-      
-      observer.observe(canvas);
-    }
-  </script>
 </Layout>
 
 <style>
