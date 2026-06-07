@@ -2086,3 +2086,58 @@ div[style*="position: absolute"][style*="filter: blur"] {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
+/* --- LIGHT THEME OVERRIDES --- */
+[data-theme="light"] {
+  --bg-main: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-card: rgba(255, 255, 255, 0.9);
+  --bg-glass: rgba(255, 255, 255, 0.95);
+  --border-light: rgba(0, 0, 0, 0.1);
+  --border-focus: rgba(0, 198, 255, 0.4);
+  
+  --color-text-white: #0f172a;
+  --color-text-muted: #475569;
+  --color-text-dark: #ffffff;
+
+  --grad-ambient: radial-gradient(circle at 50% -20%, rgba(12, 59, 251, 0.05), transparent 70%);
+}
+
+/* Force specific elements to adapt to light theme */
+[data-theme="light"] .bento-gallery *,
+[data-theme="light"] .footer,
+[data-theme="light"] .footer *,
+[data-theme="light"] .marquee-card *,
+[data-theme="light"] .creative-cards-grid *,
+[data-theme="light"] [style*="color: #fff"],
+[data-theme="light"] [style*="color: #ffffff"] {
+  color: #0f172a !important;
+}
+
+[data-theme="light"] .bento-overlay {
+  background: linear-gradient(to top, rgba(248, 250, 252, 0.95) 0%, rgba(248, 250, 252, 0.4) 60%, rgba(248, 250, 252, 0) 100%) !important;
+}
+
+[data-theme="light"] .bento-item:hover .bento-overlay {
+  background: linear-gradient(to top, rgba(248, 250, 252, 0.98) 0%, rgba(248, 250, 252, 0.7) 60%, rgba(248, 250, 252, 0.2) 100%) !important;
+}
+
+[data-theme="light"] .hero-overlay {
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.6) 0%, var(--bg-main) 100%) !important;
+}
+
+[data-theme="light"] .hero-wrapper > div:first-child {
+  opacity: 0.05 !important;
+  filter: invert(1);
+}
+
+[data-theme="light"] .dropdown-menu-wide {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme="light"] .footer {
+  background: linear-gradient(180deg, var(--bg-main) 0%, rgba(255, 255, 255, 0.95) 100%) !important;
+  border-top-color: rgba(0, 0, 0, 0.05);
+}

@@ -31,6 +31,74 @@ const { title, description = "MarketOps is a results-driven digital advertising 
         <Header />
 		<slot />
         <Footer />
+        
+        <!-- Premium Floating Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Light Theme" title="Switch to Light Theme (Beta)">
+            <svg class="icon-sun" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="icon-moon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="display:none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <style>
+            .theme-toggle-btn {
+                position: fixed;
+                bottom: 2rem;
+                right: 2rem;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: rgba(0, 198, 255, 0.1);
+                border: 1px solid rgba(0, 198, 255, 0.3);
+                color: #00c6ff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                z-index: 9999;
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            }
+            .theme-toggle-btn:hover {
+                transform: translateY(-4px) scale(1.1);
+                background: rgba(0, 198, 255, 0.2);
+                box-shadow: 0 10px 25px rgba(0, 198, 255, 0.4);
+            }
+            [data-theme="light"] .theme-toggle-btn {
+                background: rgba(15, 23, 42, 0.9);
+                border-color: #0f172a;
+                color: #fff;
+            }
+        </style>
+
+        <script is:inline>
+            // Theme Toggle Logic
+            const themeBtn = document.getElementById('theme-toggle');
+            const iconSun = document.querySelector('.icon-sun');
+            const iconMoon = document.querySelector('.icon-moon');
+
+            // Check preference
+            if (localStorage.getItem('theme') === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                iconSun.style.display = 'none';
+                iconMoon.style.display = 'block';
+            }
+
+            themeBtn.addEventListener('click', () => {
+                if (document.documentElement.getAttribute('data-theme') === 'light') {
+                    document.documentElement.removeAttribute('data-theme');
+                    localStorage.setItem('theme', 'dark');
+                    iconSun.style.display = 'block';
+                    iconMoon.style.display = 'none';
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    localStorage.setItem('theme', 'light');
+                    iconSun.style.display = 'none';
+                    iconMoon.style.display = 'block';
+                }
+            });
+        </script>
+
         <script is:inline src="/app.js" defer></script>
 	</body>
 </html>
