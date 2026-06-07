@@ -374,14 +374,34 @@ import Layout from '../layouts/Layout.astro';
     flex-direction: column;
     justify-content: flex-end;
     padding: 2.5rem;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.5s ease, border-color 0.4s ease;
+  }
+  
+  .bento-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 32px;
+    padding: 2px;
+    background: linear-gradient(135deg, rgba(0,229,255,0.8), rgba(255,63,108,0.8));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+    z-index: 5;
   }
   
   .bento-item:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.6);
-    border-color: rgba(255,255,255,0.15);
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.6), 0 0 40px rgba(0, 198, 255, 0.1);
+    border-color: transparent;
     z-index: 10;
+  }
+  
+  .bento-item:hover::after {
+    opacity: 1;
   }
   
   /* Layout Spans */
@@ -442,6 +462,12 @@ import Layout from '../layouts/Layout.astro';
   .bento-content {
     position: relative;
     z-index: 2;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateY(20px);
+  }
+
+  .bento-item:hover .bento-content {
+    transform: translateY(0);
   }
   
   .bento-title {
@@ -455,12 +481,24 @@ import Layout from '../layouts/Layout.astro';
   }
   
   .bento-desc {
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: 400;
-    color: #ffffff;
-    margin-bottom: 0.8rem;
-    line-height: 1.5;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 0;
+    line-height: 1.6;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transform: translateY(15px);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .bento-item:hover .bento-desc {
+    opacity: 1;
+    max-height: 150px;
+    transform: translateY(0);
+    margin-top: 0.8rem;
   }
 
   /* -------------------------------------
