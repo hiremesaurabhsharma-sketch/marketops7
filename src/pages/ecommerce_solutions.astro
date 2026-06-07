@@ -357,7 +357,8 @@ import Layout from '../layouts/Layout.astro';
       const ctx = canvas.getContext('2d');
       
       let w, h, particles;
-      const particleCount = 120;
+      // High performance tweak: reduce nodes on mobile
+      const particleCount = window.innerWidth < 768 ? 30 : 120;
       // Amazon Orange and Flipkart Blue, plus slight neon variations
       const colors = ['#ff9900', '#2874f0', '#00e5ff', '#ff3f6c'];
 
@@ -438,12 +439,26 @@ import Layout from '../layouts/Layout.astro';
           }
         }
         
-        requestAnimationFrame(animate);
+        if (isCanvasVisible) {
+          requestAnimationFrame(animate);
+        }
       }
 
       window.addEventListener('resize', resize);
       init();
-      animate();
+      
+      // Intersection Observer to pause animation when scrolled out of view
+      let isCanvasVisible = true;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          isCanvasVisible = entry.isIntersecting;
+          if (isCanvasVisible) {
+            animate();
+          }
+        });
+      }, { rootMargin: "100px" });
+      
+      observer.observe(canvas);
     }
   </script>
 </Layout>
@@ -526,13 +541,13 @@ import Layout from '../layouts/Layout.astro';
   .bento-overlay {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(to top, rgba(10, 15, 25, 1) 0%, rgba(10, 15, 25, 0.6) 50%, rgba(10, 15, 25, 0.1) 100%);
+    background: linear-gradient(to top, rgba(10, 15, 25, 0.95) 0%, rgba(10, 15, 25, 0.4) 60%, rgba(10, 15, 25, 0) 100%);
     z-index: 1;
     transition: background 0.4s ease;
   }
 
   .bento-item:hover .bento-overlay {
-    background: linear-gradient(to top, rgba(10, 15, 25, 0.9) 0%, rgba(10, 15, 25, 0.4) 50%, rgba(10, 15, 25, 0.05) 100%);
+    background: linear-gradient(to top, rgba(10, 15, 25, 0.98) 0%, rgba(10, 15, 25, 0.7) 60%, rgba(10, 15, 25, 0.2) 100%);
   }
   
   /* Content Overlay */
@@ -542,17 +557,22 @@ import Layout from '../layouts/Layout.astro';
   }
   
   .bento-title {
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: #fff;
-    margin-bottom: 0.5rem;
-    line-height: 1.2;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.8), 0 1px 3px rgba(0,0,0,0.5);
   }
   
   .bento-desc {
-    color: rgba(255,255,255,0.7);
     font-size: 1rem;
-    line-height: 1.6;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
   }
 
   /* -------------------------------------
